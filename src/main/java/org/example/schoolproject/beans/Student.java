@@ -1,19 +1,14 @@
 package org.example.schoolproject.beans;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Student {
     private String name;
-
-
     private Teacher teacher;
-
     public Student(Teacher teacher) {
         this.teacher = teacher;
     }
-
     @Override
     public String toString() {
         return "Student{" +
@@ -21,7 +16,6 @@ public class Student {
                 ", teacher=" + teacher +
                 '}';
     }
-
     public String getName() {
         return name;
     }
