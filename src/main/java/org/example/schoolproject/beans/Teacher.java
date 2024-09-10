@@ -10,6 +10,7 @@ public class Teacher {
 
     private Lesson lesson;
 
+
     public Teacher(Lesson lesson) {
         this.lesson = lesson;
     }
