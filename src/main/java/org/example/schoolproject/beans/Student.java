@@ -7,14 +7,11 @@ import org.springframework.stereotype.Component;
 public class Student {
     private String name;
 
-    @Autowired
+
     private Teacher teacher;
 
     public Student(Teacher teacher) {
         this.teacher = teacher;
-    }
-
-    public Student() {
     }
 
     @Override

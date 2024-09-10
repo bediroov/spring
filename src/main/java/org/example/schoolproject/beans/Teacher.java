@@ -8,15 +8,12 @@ import org.springframework.stereotype.Component;
 public class Teacher {
     private String name;
 
-    @Autowired
     private Lesson lesson;
 
     public Teacher(Lesson lesson) {
         this.lesson = lesson;
     }
 
-    public Teacher() {
-    }
 
     @Override
     public String toString() {
